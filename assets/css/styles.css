@@ -1,0 +1,152 @@
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.6em;
+  margin-bottom: 1.4em;
+}
+
+li {
+  font-size: 1.6em;
+  margin-bottom: .6em;
+}
+
+@media (max-width: 767px) {
+  h1 { font-size: 2.4em; }
+  p { font-size: 1.4em; }
+  h2 { font-size: 2em; }
+  li { font-size: 1.4em; }
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding-bottom: 0px;
+  }
+}
+
+/* Header */
+header#header {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  header#header {
+    padding-top: 15px;
+  }
+}
+
+
+
+/* Main Content */
+article#main-content {
+  margin-bottom: 20px;
+}
+
+/* Lead Magnet */
+section#lead-magnet {
+  background-color: #2980b9;
+  padding:40px;
+  color: #FFFFFF;
+  font-size: 12px; /* Relatively Reduces size of font */
+}
+
+section#lead-magnet h2 {
+  margin-top: 0;
+}
+
+/* icon */
+@media (max-width: 991px) {
+  #lead-magnet #icon { display: none; }
+}
+
+.download-icn {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  background-color: #3498db;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+
+  .download-icn span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4em;
+    transform: translate(-50%, -50%);
+    display: block;
+    text-align: center;
+    margin-left: -1px;
+  }
+
+div#leadmagnet-form {
+  margin-top: 40px;
+  background-color: #2b72a1;
+  padding: 20px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  div#leadmagnet-form {
+    margin-top: 20px;
+  }
+}
+
+div#leadmagnet-form input {
+  padding: 15px 20px;
+  color: black;
+  font-size: 18px;
+  line-height: normal;
+  border:none;
+  float: left;
+  width: 67%;
+  height: auto;
+}
+
+div#leadmagnet-form input.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+div#leadmagnet-form button {
+  float: right;
+  height: auto;
+  width: 30%;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: none;
+  line-height: normal;
+  background-color: #f39c12;
+}
+
+@media (max-width: 530px) {
+  div#leadmagnet-form button, div#leadmagnet-form input {
+    float: none;
+    width: 100%;
+  }
+  div#leadmagnet-form input { margin-bottom: 10px;}
+}
+
+#error {
+  font-size: 16px;
+  margin-bottom: 6px;
+  display: none;
+}

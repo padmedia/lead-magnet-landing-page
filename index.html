@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lead Magnet title</title>
+    <meta name="description" content="Description of the Lead Magnet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Vollkorn:400,400i,700,700i" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header class="row" id="header">
+        <div class="col-md-12 text-center">
+          <h1>Discover the Three Most Costly Course Design Mistakes</h1>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <article class="row" id="main-content">
+
+        <div class="col-md-12 text-center">
+
+          <p>Three course design mistakes are responsible for 80% of poor course
+          performance. This includes financialperformance (revenue) and learning
+          outcomes (which lead to testimonials and referrals, which lead to more
+          revenue).</p>
+
+          <p>This free 3-page PDF helps you identify these mistakes and provides
+          simple, DIY solutions to addressing them.</p>
+
+        </div>
+
+      </article>
+      <!-- End Content -->
+
+      <section class="row">
+
+        <section class="col-md-12" id="lead-magnet">
+
+          <div class="row">
+
+            <div class="col-md-2" id="icon">
+              <div class="download-icn">
+                <span class="glyphicon glyphicon-download-alt"></span>
+              </div>
+            </div>
+            <!-- Download icon -->
+
+            <div class="col-md-10">
+              <h2>Download our freebie</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              <ol>
+                <li>Duis interdum mauris ut nisl hendrerit mollis et id augue.</li>
+                <li>Nulla pulvinar mi pellentesque, auctor ligula sed, fermentum ante.</li>
+                <li>Pellentesque nisi justo, placerat ut vestibulum non, iaculis ut magna.</li>
+              </ol>
+            </div>
+
+          </div>
+          <!-- End Row -->
+
+          <div class="row">
+
+            <div class="col-md-12" id="leadmagnet-form">
+
+              <form action="URL_TO_YOUR_DRIP_FORM" method="post" novalidate id="subscribe">
+
+                <div id="error">Please enter a valid email address</div>
+
+                <input type="email" name="fields[email]" id="email-address" value="" placeholder="Your email address">
+                <button type="submit">Get it now</button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </section>
+        <!-- End Lead Magnet -->
+
+      </section>
+      <!-- End Row -->
+
+    </div>
+    <!-- End Container -->
+
+    <script>
+
+      // Add event listener for Form Submission
+      document.getElementById("subscribe").addEventListener('submit', function(e) {
+
+        // Regex for Email Addres
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        // Email Field
+        var email = document.getElementById("email-address");
+
+        // Text if value of email is false
+        if (! re.test(email.value))
+        {
+
+          // Email address is invalid
+          email.className += ' error'; // Add error class to input
+          document.getElementById("error").style.display = "block";
+          e.preventDefault(); // Don't submit form
+
+        }
+
+        // Email address is valid - Submit to Drip
+        return true;
+
+      });
+
+    </script>
+
+    </body>
+
+</html>
