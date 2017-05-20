@@ -6,4 +6,4 @@ The landing page is built to be used with [Drip email automation](https://www.dr
 
 Find and replace [URL_TO_YOUR_DRIP_FORM] for the actual URL found in your embedded form.
 
-I hope you enjoy this and it helps to quickly and cheaply validate your new market positioning. 
+I hope you enjoy this and it helps you to quickly validate your new market positioning. 
